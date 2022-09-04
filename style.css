@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: brown;
+    /* min-height: 100vh; */
+}
+
+.test{
+    margin: 5rem 0 0 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 100% 100%;
+    gap:20px;
+    border-radius: 20px;
+}
+
+.box{
+    background-color: rgb(185, 126, 126);
+    border-radius: 15px;
+    border: 3px solid wheat;
+}
+
+.box:nth-child(3){
+    height:20rem;
+}
+
+.box:nth-child(4){
+    height:20rem;
+}
+
+.box p{
+    color: aliceblue;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding:5px;
+}
+
+@media (max-width:700px){
+.test{
+    grid-template-columns: minmax(100px,2fr);
+}
+}
